@@ -52,6 +52,7 @@ const blogsData = [
 
 const PostDetailsPage = async ({ params }) => {
     const { postId } = await params;
+    // TODO:Load data from database
     const post = blogsData.find(post => post.id === parseInt(postId))
     console.log(postId, post)
     return (
