@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Post from '../components/Post';
 
 const blogsData = [
@@ -50,14 +50,14 @@ const blogsData = [
 ];
 
 const BlogsPage = () => {
-    return (
-        <div>
-            <h2>Our Blogs</h2>
-            {
-                blogsData.map(post => <Post key={post.id} post={post}></Post>)
-            }
-        </div>
-    );
+  return (
+    <div>
+      <h2>Our Blogs</h2>
+      {
+        blogsData.map((post) => <Post key={post.id} post={post}></Post>)
+      }
+    </div>
+  );
 };
 
 export default BlogsPage;
