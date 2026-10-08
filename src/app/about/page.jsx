@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
 
+export const metadata = {
+  title: 'DBBL|About Us',
+  description: '...',
+}
+
 const AboutPage = () => {
     return (
         <div>
